@@ -1,36 +1,36 @@
+import { useEffect, useState } from "react";
+
 import Card from "../UI/Card";
 import GadgetItem from "./GadgetItem/GadgetItem";
 import classes from "./AvailableGadgets.module.css";
 
-const DUMMY_Gadgets = [
-  {
-    id: "m1",
-    name: "iPhone 16",
-    description: "128gb",
-    price: 1200,
-  },
-  {
-    id: "m2",
-    name: "Samsung S24",
-    description: "5000mAh, 256gb",
-    price: 1001.2,
-  },
-  {
-    id: "m3",
-    name: "Charger",
-    description: "Type C, iPhone",
-    price: 15.3,
-  },
-  {
-    id: "m4",
-    name: "Screen",
-    description: "iPhone 13 Pro",
-    price: 45.2,
-  },
-];
-
 const AvailableGadgets = () => {
-  const gadgetsList = DUMMY_Gadgets.map((gadget) => (
+  const [gadgets, setGadgets] = useState([]);
+
+  useEffect(() => {
+    const fetchGadgets = async () => {
+      const response = await fetch(
+        "https://order-gadgets-app-default-rtdb.firebaseio.com/gadgets.json"
+      );
+
+      const responseData = await response.json();
+      const loadGadgets = [];
+
+      for (const key in responseData) {
+        loadGadgets.push({
+          id: key,
+          name: responseData[key].name,
+          description: responseData[key].description,
+          price: responseData[key].price,
+        });
+      }
+      setGadgets(loadGadgets);
+    };
+
+    fetchGadgets();
+  }, []);
+
+  const gadgetsList = gadgets.map((gadget) => (
     <GadgetItem
       key={gadget.id}
       id={gadget.id}
