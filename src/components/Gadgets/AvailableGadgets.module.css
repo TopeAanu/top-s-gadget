@@ -5,6 +5,16 @@
   animation: gadgets-appear 1s ease-out forwards;
 }
 
+.GadgetsLoading {
+  text-align: center;
+  color: #333
+}
+
+.GadgetsError {
+  text-align: center;
+  color: red;
+}
+
 .gadgets ul {
   list-style: none;
   margin: 0;
