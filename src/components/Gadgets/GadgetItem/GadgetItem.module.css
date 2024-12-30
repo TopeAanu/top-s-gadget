@@ -14,6 +14,11 @@
   font-style: italic;
 } */
 
+.image {
+  max-width: 30%; /* Ensure the image is responsive */
+  height: auto;    /* Maintain aspect ratio */
+}
+
 .price {
   margin-top: 0.25rem;
   font-weight: bold;

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-
 import GadgetItemForm from './GadgetItemForm';
+import GadgetImage from './GadgetImage'; // Import the new GadgetImage component
 import classes from './GadgetItem.module.css';
 import CartContext from '../../../store/cart-context';
 
@@ -9,12 +9,12 @@ const GadgetItem = (props) => {
 
   const price = `$${props.price.toFixed(2)}`;
 
-  const addToCartHandler = amount => {
+  const addToCartHandler = (amount) => {
     cartCtx.addItem({
       id: props.id,
       name: props.name,
       amount: amount,
-      price: props.price
+      price: props.price,
     });
   };
 
@@ -22,6 +22,7 @@ const GadgetItem = (props) => {
     <li className={classes.gadget}>
       <div>
         <h3>{props.name}</h3>
+        <GadgetImage id={props.id} alt={props.name} /> {/* Use the new GadgetImage component */}
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}>{price}</div>
       </div>

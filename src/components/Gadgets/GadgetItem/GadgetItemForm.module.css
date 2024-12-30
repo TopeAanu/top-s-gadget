@@ -4,6 +4,7 @@
 
 .form button {
   font: inherit;
+  margin-top: 2rem;
   cursor: pointer;
   background-color: #6a009e;
   color: white;
