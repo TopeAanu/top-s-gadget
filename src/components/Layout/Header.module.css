@@ -28,3 +28,11 @@
   object-fit: cover;
   transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
 }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1rem; /* Size for h3 */
+    font-weight: bold; /* Adjust weight if necessary */
+    margin: 0.5em 0; /* Adjust margins to match h3 */
+  }
+}

@@ -58,3 +58,21 @@
     transform: scale(1);
   }
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 500px) {
+  .button {
+    padding: 0.5rem 1.5rem; /* Reduce padding for smaller screens */
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .icon {
+    width: 1rem; /* Reduced icon size */
+    height: 1rem; /* Reduced icon size */
+  }
+
+  .badge {
+    padding: 0.15rem 0.5rem; /* Smaller badge padding */
+    font-size: 0.8rem; /* Smaller badge font size */
+  }
+}

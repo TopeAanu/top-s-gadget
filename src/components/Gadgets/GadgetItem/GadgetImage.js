@@ -2,7 +2,7 @@ import React from 'react';
 import iPhone16 from '../../../assets/iPhone16.png';
 import Samsung24 from '../../../assets/samsung24.png';
 import Redmi12 from '../../../assets/redmi12.png';
-import Camon19 from '../../../assets/camon19.png';
+import Camon30 from '../../../assets/tecnocamon30.png';
 import classes from './GadgetItem.module.css';
 
 const GadgetImage = ({ id, alt }) => {
@@ -20,7 +20,7 @@ const GadgetImage = ({ id, alt }) => {
       imageSrc = Redmi12;
       break;
     case 'g4':
-      imageSrc = Camon19;
+      imageSrc = Camon30;
       break;
     default:
       imageSrc = null; // No image for other IDs
