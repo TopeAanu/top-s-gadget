@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import GadgetItemForm from './GadgetItemForm';
-import GadgetImage from './GadgetImage'; // Import the new GadgetImage component
+import GadgetImage from './GadgetImage'; 
 import classes from './GadgetItem.module.css';
 import CartContext from '../../../store/cart-context';
 

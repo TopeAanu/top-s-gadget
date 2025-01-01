@@ -29,3 +29,21 @@
   color: #6a009e;
   font-size: 1.25rem;
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 500px) {
+  .gadget {
+    flex-direction: column; 
+    align-items: flex-start;
+    margin: 0.5rem; 
+    padding: 1rem; 
+  }
+
+  .gadget > div {
+    width: 100%; /* Make child divs take full width */
+  }
+
+  .gadget > div:last-child {
+    margin-top: 1rem; 
+  }
+}

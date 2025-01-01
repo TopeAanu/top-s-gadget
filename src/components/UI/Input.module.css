@@ -16,3 +16,10 @@
   font: inherit;
   padding-left: 0.5rem;
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 500px) {
+  .input {
+    margin-bottom: 0.5rem;
+  }
+}
