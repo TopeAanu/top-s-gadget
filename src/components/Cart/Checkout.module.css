@@ -1,7 +1,15 @@
 .form {
   margin: 1rem 0;
-  height: 19rem;
-  overflow: auto;
+  max-height: 60vh; /* Set a maximum height for the form */
+  overflow: hidden; /* Hide overflow for the main form container */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.controls {
+  overflow-y: auto; /* Allow vertical scrolling for the controls */
+  flex-grow: 1; /* Allow the controls to take available space */
+  margin-bottom: 1rem; /* Add space below the controls */
 }
 
 .control {
@@ -20,6 +28,11 @@
   border-radius: 4px;
   width: 20rem;
   max-width: 100%;
+}
+
+.control input:focus {
+  box-shadow: 0 0 3px #c34bff;
+  outline: none;
 }
 
 .actions {

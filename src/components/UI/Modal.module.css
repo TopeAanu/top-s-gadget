@@ -13,12 +13,29 @@
   top: 15vh;
   left: 5%;
   width: 90%;
+  max-height: 80vh; /* Set a maximum height for the modal */
+  overflow-y: auto; /* Allow vertical scrolling */
   background-color: white;
   padding: 1rem;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.modal::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.modal {
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbar for Edge */
+.modal {
+  -ms-overflow-style: none; /* Hide scrollbar */
 }
 
 @media (min-width: 768px) {
