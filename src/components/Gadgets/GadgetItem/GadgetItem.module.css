@@ -11,16 +11,12 @@
 }
 
 .gadget > div:last-child {
-  margin-top: 4rem; 
+  margin-top: 0rem; 
 }
 
-/* .description {
-  font-style: italic;
-} */
-
 .image {
-  max-width: 30%; /* Ensure the image is responsive */
-  height: auto;    /* Maintain aspect ratio */
+  max-width: 30%; 
+  height: auto;  
 }
 
 .price {
@@ -30,7 +26,6 @@
   font-size: 1.25rem;
 }
 
-/* Media Query for Smaller Screens */
 @media (max-width: 500px) {
   .gadget {
     flex-direction: column; 
@@ -40,7 +35,7 @@
   }
 
   .gadget > div {
-    width: 100%; /* Make child divs take full width */
+    width: 100%;
   }
 
   .gadget > div:last-child {

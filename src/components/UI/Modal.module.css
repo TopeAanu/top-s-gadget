@@ -45,6 +45,15 @@
   }
 }
 
+@media (max-width: 500px) {
+  .modal {
+    width: 82%; 
+    height: auto; 
+    max-height: 80vh; 
+    padding: 1rem; 
+  }
+}
+
 @keyframes slide-down {
   from {
     opacity: 0;
