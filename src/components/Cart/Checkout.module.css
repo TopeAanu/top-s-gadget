@@ -1,7 +1,7 @@
 .form {
   margin: 1rem 0;
   max-height: 60vh; /* Set a maximum height for the form */
-  overflow: hidden; /* Hide overflow for the main form container */
+  overflow-y: auto; /* Allow vertical scrolling for the form */
   display: flex;
   flex-direction: column; /* Stack items vertically */
 }
