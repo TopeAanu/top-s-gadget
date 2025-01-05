@@ -75,3 +75,11 @@
   border-color: #aa0b20;
   background-color: #ffeff1;
 }
+
+@media (max-width: 500px) {
+  .control input {
+    width: 90%; 
+    padding: .8rem; 
+    font-size: 1.2rem; 
+  }
+}
