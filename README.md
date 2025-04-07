@@ -1,2 +1,2 @@
 ## Top's Gadget
-Top's Gadget is a modern day web app that makes the purchase of gadgets and repair services seamless. Built with Reactjs, JavaScript, and CSS. [topsgadget](https://topsgadget.netlify.app/)
+With Top's Gadget, you can order any gadgets of your choice, and also professional repair services for your gadgets. The app was built with Reactjs, JavaScript, and CSS. View project [here](https://topsgadget.netlify.app/)
